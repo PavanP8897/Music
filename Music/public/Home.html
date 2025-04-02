@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music</title>
+
+    <style>
+        /* Full-screen background */
+        .video-container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%,-50%);
+            object-fit: cover;
+        }
+
+        /* Styling for text and buttons */
+        img {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+        }
+
+        button {
+            border-style: none;
+            background: none;
+        }
+
+        .music-container {
+            margin-top: 180px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+         </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+
+    
+    <div class="video-container">
+        <video class="background-video" autoplay muted loop>
+            <source src="images/224328.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <h1 class="ms-5 mt-5" align="center" style="color: antiquewhite;">Welcome To The Party</h1>
+
+    <div class="music-container">
+        <button class="drum" data-key="piano" ><img src="images/Piano.jpg" alt="Piano"></button>
+        <button class="drum" data-key="violin"><img src="images/Vilon.jpg" alt="Violin"></button>
+        <button class="drum" data-key="drums"><img src="images/DrumSet.webp" alt="Drum Set"></button>
+        <button class="drum" data-key="keyboard"><img src="images/keyboards-with-colorful-lights_437817-1734.avif" alt="Keyboard"></button>
+        <button class="drum" data-key="all"><img src="images/All.jpg" alt="All Instruments"></button>
+        <button class="drum" data-key="flute"><img src="images/Flute.jpeg" alt="Flute"></button>
+    </div>
+
+    <script src="../src/index.js"></script>
+
+    <script src="../node_modules/jquery/dist/jquery.js"> </script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"> </script>
+
+</body>
+</html>
