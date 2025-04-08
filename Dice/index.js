@@ -31,7 +31,7 @@ else if (randomNumber2 > randomNumber1) {
 }
 else {
   var draw = document.querySelector("h2");
-  draw.style.color="#FF69B4";
+  draw.style.color="black";
   draw.innerHTML="Draw!!!";
 
   let gif = document.createElement("img");
